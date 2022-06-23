@@ -1,0 +1,374 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #192436;
+    color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E5E5;
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 400;
+}
+
+p {
+    color: #E5E5E5;
+}
+
+.waller {
+    margin: 0 auto;
+    width: 1110px;
+    height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p {
+ margin: 0;
+}
+
+/*header*/
+
+header {
+    margin-top: 26px;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 87px;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo_title{
+    font-family: 'Comfortaa', cursive;
+    color: aliceblue;
+    margin-left: 10px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 395px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header-link h2 {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.856px;
+    color: #E5E5E5;
+}
+
+.btn {
+    width: 177px;
+    height: 31px;
+    background-color: #E5E5E5;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn a {
+    color: rgb(20, 20, 20);
+    text-transform: uppercase;
+}
+
+/*banner*/
+
+.banner {
+    margin: 0 auto;
+    width: 344px;
+    height: 57px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.banner .banner-title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.banner .banner-subtitle {
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    color: #A0A0A0;
+}
+
+/*About Us*/
+
+.aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 309px;
+    margin-bottom: 55px;
+}
+
+.aboutUs img {
+    border-radius: 30px;
+}
+
+.aboutUs p {
+    text-align: center;
+    margin-left: 15px;
+    width: 376px;
+    height: 95px;
+}
+
+/*achievements*/
+
+.achievements {
+    margin-bottom: 96px;
+}
+
+.achievements .items {
+    margin: 0 auto;
+    width: 845px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.achievements .items p {
+    margin: 0;
+    text-align: center;
+}
+
+.achievements .items h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 64px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*products*/
+
+.section-title-box {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title-box hr {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 165px;
+    border: 1px solid rgba(254, 218, 121, 1);
+
+}
+
+.section-title-box p {
+    width: 195px;
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 9px;
+    color: #A0A0A0;
+}
+
+.products .items {
+    margin: 0 auto;
+    margin-top: 54px;
+    width: 845px;
+}
+
+.products .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 363px;
+    margin-bottom: 30px;
+}
+
+.products .item__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 412px;
+    height: 282px;
+    
+}
+
+.products .i1 {
+    background: linear-gradient(115.11deg, rgba(254, 218, 121, 0.6552) 0%, rgba(254, 218, 121, 0.1224) 100%);
+    border-radius: 5.90061px;
+}
+
+.products .i1 img {
+    border: 2px solid rgba(254, 218, 121, 1);
+    border-radius: 2px;
+}
+
+.products .i2{
+    background: linear-gradient(116.5deg, rgba(116, 240, 230, 0.56) 0%, rgba(116, 240, 230, 0.04) 100%);
+    border-radius: 5.61867px;
+}
+
+.products .i2 img {
+    border: 1.40467px solid #74E6FF;
+    border-radius: 2.80933px;
+}
+
+.products .i3{
+    background: linear-gradient(114.23deg, rgba(255, 100, 112, 0.468) -0.02%, rgba(255, 100, 112, 0.0648) 100.02%);
+    border-radius: 5.69922px;
+}
+
+.products .i3 img {
+    border: 1.41519px solid #FF6470;
+    border-radius: 2.83038px;
+}
+
+.products .item__description {
+    width: 320px;
+}
+
+.products .item h1 {
+    font-weight: 700;
+    font-size: 28.0933px;
+    color: #E5E5E5;
+    margin-bottom: 18px;
+}
+
+.products .item p {
+    width: 307px;
+    height: 57px;
+    font-weight: 300;
+    font-size: 16.856px;
+    margin-bottom: 34px;
+}
+
+.products .item h6 {
+    font-weight: 400;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.products .item .elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products .item .el {
+    width: 147px;
+    height: 55px;
+    text-align: center;
+}
+
+.products .item .el h6 {
+    text-align: center;
+    margin-bottom: 3px;
+    width: 147px;
+}
+
+.products .item .el p {
+    width: 147px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+}
+
+/*contacts*/
+
+.contacts {
+    margin-bottom: 100px;
+}
+
+.contacts__block {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 77px;
+    width: 845px;
+    align-items: center;
+}
+
+.contacts .title {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 7px;
+    position: relative;
+    left: -55px;
+}
+
+.contacts .title h1 {
+    font-weight: 400;
+    font-size: 25.284px;
+    line-height: 28px;
+
+    color: #47515E;
+}
+
+.contacts .title img {
+    position: relative;
+    top: 0px;
+    left: -5px;
+}
+
+.contacts__block .el {
+    margin-top: 24px;
+}
+
+.contacts__block .el h6 {
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #EEC07A;
+}
+
+.contacts__block .el p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.contacts .map {
+    width: 427px;
+    height: 292px;
+}
+
+
+footer {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 11px;
+
+    color: #A9A9A9;
+}
