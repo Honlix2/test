@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин Тико</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/tiko.css">
+
+    <!-- STYLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Yanone+Kaffeesatz:wght@454&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <h1>VVSU<strong>FOOD</strong></h1>
+            </a>
+            <form action="#" method="POST">
+                <input type="search" class="input input-search input-header" placeholder="Поиск ресторанов и блюд">
+            </form>
+            <div class="buttons">
+                <form action="catalog.html" class="link-catalog" target="_blank">
+                    <button class="button">Каталог</button>
+                </form>
+                <button class="button button-cart" id="button-cart"></button>
+                <button class="button button-user" id="button-auth"></button>
+
+            </div>
+
+        </header>
+    </div>
+
+    <!-- CONTENT -->
+
+    <main>
+        <div class="container">
+            <section class="promo promo-restaurant">
+                <div class="text-promo">
+                    <h2>Магазин "Тико"</h2>
+                    <p>Продуктовый магазин</p>
+                </div>
+            </section>
+
+            <form action="#" method="POST">
+                <input type="search" class="input input-search input-under-promo" placeholder="Поиск ресторанов и блюд">
+            </form>
+
+            <section class="restaurant">
+
+
+
+                <div class="heading">
+                    <img src="assets/img/icons/meal.png" alt="">
+                    <h2 class="cards-heading-text">Еда</h2>
+                </div>
+                <div class="cards cards-menu">
+                    <div class="card card-meal">
+                        <img src="assets/img/cards/1-card.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Пицца "Семейная"</h3>
+                                <p class="price">450 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="food-pizza-semeinaya" class="button button-link button-primary">Состав</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-meal">
+                        <img src="assets/img/cards/2-card.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Ролл "Стандарт"</h3>
+                                <p class="price">200 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="food-roll-standart" class="button button-link button-primary">Состав</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-meal">
+                        <img src="assets/img/cards/3-card.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Пицца "4 Сезона"</h3>
+                                <p class="price">590 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="food-pizza-foursezon" class="button button-link button-primary">Состав</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card card-meal">
+                        <img src="assets/img/cards/4-card.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Ролл "Калифорния"</h3>
+                                <p class="price">820 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="food-roll-kaliforniya" class="button button-link button-primary">Состав</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-meal">
+                        <img src="assets/img/cards/5-card.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Ролл "Сириус"</h3>
+                                <p class="price">390 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="food-roll-sirius" class="button button-link button-primary">Состав</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-meal">
+                        <img src="assets/img/cards/6-card.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Пицца "Римская"</h3>
+                                <p class="price">408 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="food-pizza-rimskaya" class="button button-link button-primary">Состав</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THE DRINKS -->
+
+                <div class="heading">
+                    <img src="assets/img/icons/soda.png" alt="">
+                    <h2 class="cards-heading-text">Напитки</h2>
+                </div>
+                <div class="cards cards-menu">
+                    <div class="card card-meal">
+                        <img src="assets/img/products/drinks/chupa-chups.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Chupa Chups</h3>
+                                <p class="price">120 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="drinks-chupachups" class="button button-link button-primary">Подробнее</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-meal">
+                        <img src="assets/img/products/drinks/coca-cola.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Coca Cola</h3>
+                                <p class="price">60 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="drinks-cola" class="button button-link button-primary">Подробнее</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-meal">
+                        <img src="assets/img/products/drinks/coffee.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Кофе "Латте"</h3>
+                                <p class="price">140 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="drinks-coffeelatte" class="button button-link button-primary">Подробнее</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card card-meal">
+                        <img src="assets/img/products/drinks/fanta.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Fanta "Лимон"</h3>
+                                <p class="price">82 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="drinks-fantalemon" class="button button-link button-primary">Подробнее</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-meal">
+                        <img src="assets/img/products/drinks/red-bull.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>Red Bull</h3>
+                                <p class="price">140 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="drinks-redbull" class="button button-link button-primary">Подробнее</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-meal">
+                        <img src="assets/img/products/drinks/smoothies.png" alt="">
+                        <div class="card-title card-title-menu">
+                            <div class="card-text">
+                                <h3>СМУЗИ</h3>
+                                <p class="price">160 ₽</p>
+                            </div>
+                            <div class="card-buttons card-buttons-meal">
+                                <button id="drinks-smuzi" class="button button-link button-primary">Подробнее</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <h1>VVSU<strong>FOOD</strong></h1>
+                    </a>
+                </div>
+                <div class="creator">
+                    <p>by <a href="https://vk.com/honlix">Dudrov</a></p>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <!-- MODALS-->
+
+
+
+    <!-- CART MODAL-->
+
+    <div class="modal" id="cart-modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close close-cart">&times</button>
+            </div>
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Пицца "4 сезона"</span>
+                    <strong class="food-price">590 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">+</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">-</button>
+                    </div>
+                </div>
+
+                <div class="food-row">
+                    <span class="food-name">Chupa Chups</span>
+                    <strong class="food-price">120 ₽</strong>
+                    <div class="food-counter">
+                        <button class="counter-button">+</button>
+                        <span class="counter">1</span>
+                        <button class="counter-button">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="modal-footer-price">710 ₽</span>
+                <div class="footer-buttons">
+                    <button class="button button-primary">Оплатить</button>
+                    <button class="button">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AUTH MODAL-->
+
+    <div class="modal" id="auth-modal">
+        <div class="modal-dialog modal-dialog-auth">
+            <div class="modal-header">
+                <h3 class="modal-title">Вход</h3>
+                <button class="close close-auth">&times</button>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="auth-name">
+                        <label for="user-name" class="auth-form-label">Как вас зовут?</label>
+                        <input type="text" required id="user-name" class="auth-input" placeholder="Имя">
+                    </div>
+
+                    <div class="auth-number">
+                        <label for="b-number" class="auth-form-label">Номер бейджа</label>
+                        <input type="text" required id="b-number" class="auth-input" placeholder="L015...">
+                    </div>
+                    <button class="button button-auth button-primary">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODALS rest-->
+
+    <!-- MODAL for KFC-->
+    <div class="modal" id="kfc-rest-modal">
+        <div class="modal-dialog modal-dialog-rest">
+            <div class="modal-header">
+                <h3 class="modal-title">Ресторан</h3>
+                <button class="close close-rest-kfc">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest">
+                <div class="main-info">
+                    <img src="./assets/img/logo-restaurants/kfc.png" alt="" class="modal-img">
+                    <div class="title-info">
+                        <h1>Ресторан KFC</h1>
+                        <p class="category">Фастфуд</p>
+                        <p>Место: Зимняя падь</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">от 49₽</p>
+                            <form action="kfs.html">
+                                <button class="button">Всё меню</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="tiko-rest-modal">
+        <div class="modal-dialog modal-dialog-rest">
+            <div class="modal-header">
+                <h3 class="modal-title">Магазин</h3>
+                <button class="close close-rest-tiko">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest">
+                <div class="main-info">
+                    <img src="./assets/img/logo-restaurants/tiko.png" alt="" class="modal-img">
+                    <div class="title-info">
+                        <h1>Магазин TIKO</h1>
+                        <p class="category">Магазин</p>
+                        <p>Место: Зимняя падь</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">от 112₽</p>
+                            <form action="tiko.html">
+                                <button class="button">Всё меню</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="papakarlo-rest-modal">
+        <div class="modal-dialog modal-dialog-rest">
+            <div class="modal-header">
+                <h3 class="modal-title">Кафе</h3>
+                <button class="close close-rest-papakarlo">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest">
+                <div class="main-info">
+                    <img src="./assets/img/logo-restaurants/papakarlo.png" alt="" class="modal-img">
+                    <div class="title-info">
+                        <h1>Кафе "Папа Карло"</h1>
+                        <p class="category">Домашняя кухня</p>
+                        <p>Место: Корпус №6</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">от 65₽</p>
+                            <form action="papa-karlo.html">
+                                <button class="button">Всё меню</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="skovoroda-rest-modal">
+        <div class="modal-dialog modal-dialog-rest">
+            <div class="modal-header">
+                <h3 class="modal-title">Кафе</h3>
+                <button class="close close-rest-skovoroda">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest">
+                <div class="main-info">
+                    <img src="./assets/img/logo-restaurants/skovoroda1.png" alt="" class="modal-img">
+                    <div class="title-info">
+                        <h1>Кафе "Сковорода"</h1>
+                        <p class="category">Кафе</p>
+                        <p>Место: Между 4 и 5 корпусами</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">от 57₽</p>
+                            <form action="skovoroda.html">
+                                <button class="button">Всё меню</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="fartuk-rest-modal">
+        <div class="modal-dialog modal-dialog-rest">
+            <div class="modal-header">
+                <h3 class="modal-title">Ресторан</h3>
+                <button class="close close-rest-fartuk">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest">
+                <div class="main-info">
+                    <img src="./assets/img/logo-restaurants/fartuk.png" alt="" class="modal-img">
+                    <div class="title-info">
+                        <h1>Ресторан "Фартук"</h1>
+                        <p class="category">Ресторан</p>
+                        <p>Место: ВГУЭС</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">от 89₽</p>
+                            <form action="fartuk.html">
+                                <button class="button">Всё меню</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="kofein-rest-modal">
+        <div class="modal-dialog modal-dialog-rest">
+            <div class="modal-header">
+                <h3 class="modal-title">Кафе</h3>
+                <button class="close close-rest-kofein">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest">
+                <div class="main-info">
+                    <img src="./assets/img/logo-restaurants/kofein.png" alt="" class="modal-img">
+                    <div class="title-info">
+                        <h1>Кафе "Кофеин"</h1>
+                        <p class="category">Магазин</p>
+                        <p>Место: Андерграунд</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">от 66₽</p>
+                            <form action="kofein.html">
+                                <button class="button">Всё меню</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- MODALS FOR FOOD -->
+
+
+    <div class="modal" id="semeinaya-pizza-food-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Еда</h3>
+                <button class="close close-food-pizza-semeinaya">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/cards/1-card.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Пицца "Семейная"</h1>
+                        <p class="category">Пицца</p>
+                        <p class="composition">Состав:</p>
+                        <ul class="ingredients">
+                            <li>Грибы</li>
+                            <li>Колбаса</li>
+                            <li>Соус</li>
+                            <li>Помидоры</li>
+                        </ul>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">450 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="standart-roll-food-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Еда</h3>
+                <button class="close close-food-roll-standart">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/cards/2-card.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Ролл "Стандарт"</h1>
+                        <p class="category">Ролл</p>
+                        <p class="composition">Состав:</p>
+                        <ul class="ingredients">
+                            <li>Рис</li>
+                            <li>Рыба</li>
+                            <li>Соус</li>
+                        </ul>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">200 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="foursezon-pizza-food-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Еда</h3>
+                <button class="close close-food-pizza-foursezon">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/cards/3-card.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Пицца "4 Сезона"</h1>
+                        <p class="category">Пицца</p>
+                        <p class="composition">Состав:</p>
+                        <ul class="ingredients">
+                            <li>Колбаса</li>
+                            <li>Соус</li>
+                            <li>Помидоры</li>
+                        </ul>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">590 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="kaliforniya-roll-food-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Еда</h3>
+                <button class="close close-food-roll-kaliforniya">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/cards/4-card.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Ролл "Калифорния"</h1>
+                        <p class="category">Ролл</p>
+                        <p class="composition">Состав:</p>
+                        <ul class="ingredients">
+                            <li>Соус</li>
+                            <li>Рис</li>
+                            <li>Рыба</li>
+                        </ul>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">820 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="sirius-roll-food-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Еда</h3>
+                <button class="close close-food-roll-sirius">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/cards/5-card.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Ролл "Сириус"</h1>
+                        <p class="category">Ролл</p>
+                        <p class="composition">Состав:</p>
+                        <ul class="ingredients">
+                            <li>Соус</li>
+                            <li>Рис</li>
+                            <li>Рыба</li>
+                        </ul>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">390 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="rimskaya-pizza-food-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Еда</h3>
+                <button class="close close-food-pizza-rimskaya">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/cards/6-card.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Пицца "Римская"</h1>
+                        <p class="category">Пицца</p>
+                        <p class="composition">Состав:</p>
+                        <ul class="ingredients">
+                            <li>Колбаса</li>
+                            <li>Соус</li>
+                            <li>Помидоры</li>
+                        </ul>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">408 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODALS FOR DRINKS -->
+
+    <div class="modal" id="chupachups-drinks-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Напиток</h3>
+                <button class="close close-drinks-chupachups">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/products/drinks/chupa-chups.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Chupa Chups</h1>
+                        <p class="category">Газировка</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">120 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="cola-drinks-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Напиток</h3>
+                <button class="close close-drinks-cola">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/products/drinks/coca-cola.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Coca Cola</h1>
+                        <p class="category">Газировка</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">60 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="coffeelatte-drinks-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Напиток</h3>
+                <button class="close close-drinks-coffeelatte">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/products/drinks/coffee.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Кофе "Латте"</h1>
+                        <p class="category">Кофе</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">140 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="fantalemon-drinks-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Напиток</h3>
+                <button class="close close-drinks-fantalemon">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/products/drinks/fanta.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Fanta "Лимон"</h1>
+                        <p class="category">Газировка</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">82 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="redbull-drinks-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Напиток</h3>
+                <button class="close close-drinks-redbull">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/products/drinks/red-bull.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Red Bull</h1>
+                        <p class="category">Газировка</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">140 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="smuzi-drinks-modal">
+        <div class="modal-dialog modal-dialog-rest modal-dialog-food">
+            <div class="modal-header">
+                <h3 class="modal-title">Напиток</h3>
+                <button class="close close-drinks-smuzi">&times</button>
+            </div>
+            <div class="modal-body modal-body-rest modal-body-food">
+                <div class="main-info">
+                    <img src="./assets/img/products/drinks/smoothies.png" alt="" class="modal-img img-food">
+                    <div class="title-info">
+                        <h1>Смузи</h1>
+                        <p class="category">Коктель</p>
+                        <div class="modal-rest-buttons">
+                            <p class="modal-footer-price modal-rest-price">160 ₽</p>
+                            <form action="kofein.html">
+                                <button class="button">В Магазин</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+    <script src="./assets/js/tiko.js"></script>
+</body>
+
+</html>

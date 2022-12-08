@@ -1,0 +1,622 @@
+        * {}
+        
+        body {
+            font-family: 'PT Sans', sans-serif;
+        }
+        
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+        
+        header {
+            margin-top: 44px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        h1 {
+            letter-spacing: 0.09em;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+        
+        strong {
+            color: orange;
+            font-weight: bolder 700px;
+        }
+        
+        .input-search {
+            padding-left: 30px;
+            width: 690px;
+            height: 40px;
+            background-image: url(./img/SVG/search.svg);
+            background-repeat: no-repeat;
+            background-position: left 11px center;
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+        }
+        
+        .buttons {
+            display: flex;
+        }
+        
+        .link-catalog {
+            margin-right: 5px;
+        }
+        
+        .button {
+            width: 97px;
+            height: 40px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+            border: 1px solid #D9D9D9;
+            border-radius: 5px;
+            color: #302c34;
+        }
+        
+        .button-primary {
+            background-color: #1890ff;
+        }
+        
+        .button-cart {
+            background: url(./img/SVG/cart.svg) center;
+            background-repeat: no-repeat;
+            width: 47px;
+        }
+        
+        .button-user {
+            background: url(./img/SVG/user.svg) center;
+            background-color: #302c34;
+            background-repeat: no-repeat;
+            margin-left: 5px;
+            width: 47px;
+            border: none;
+        }
+        /* CONTENT */
+        
+        main {
+            background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+        }
+        
+        .promo {
+            height: 250px;
+            box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+            background: #fff1b8 url(./img/cards/promo-img.png) top -25px right 10px;
+            background-repeat: no-repeat;
+            border-radius: 5px;
+            padding: 68px;
+            padding-top: 100px;
+        }
+        
+        .promo-restaurant {
+            background-color: white;
+            background-size: 700px;
+            background-position: top -25px right 10px;
+        }
+        
+        .input-under-promo {
+            display: none;
+        }
+        
+        .heading {
+            display: flex;
+            align-items: center;
+        }
+        
+        .heading img {
+            height: 50px;
+            margin-right: 5px;
+        }
+        
+        h2 {
+            font-weight: bolder;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-size: 28px;
+            color: #302c34;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+        
+        .cards-heading-text {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            font-family: 'Roboto', sans-serif;
+            color: #302c34;
+        }
+        
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            width: 31%;
+            min-height: 340px;
+            background: rgb(255, 255, 255);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 5px;
+            flex-basis: 31%;
+            margin-bottom: 20px;
+        }
+        
+        .card img {
+            width: 100%;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.03);
+        }
+        
+        .card-buttons {
+            display: flex;
+            justify-content: start;
+            margin: 10px 0px 0px 15px;
+        }
+        
+        .button-primary {
+            background-color: #1890FF;
+            color: white;
+            margin-right: 5px;
+        }
+        
+        .card-title {
+            display: flex;
+            color: #48434d;
+            align-items: center;
+        }
+        
+        .card-title-menu {
+            display: block;
+        }
+        
+        .category-tag {
+            margin-left: 10px;
+        }
+        /* CARDS MEAL */
+        
+        .card-meal {
+            height: 380px;
+        }
+        
+        .card-text {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            width: 90%;
+        }
+        
+        .price p {
+            font-weight: bold 700px;
+        }
+        
+        .card-buttons-meal {
+            margin-top: 0;
+        }
+        /*FOOTER*/
+        
+        .footer-content {
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-logo h1 {
+            font-size: 24px;
+        }
+        
+        .creator p {
+            font-size: 18px;
+            margin-left: 5px;
+        }
+        /*catalog*/
+        /*.restaurant-cards {
+            height: 50px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .rest-card {
+            width: 10%;
+        }
+        
+        .rest-card-kfc {
+            background-image: url("./assets/img/logo-restaurants/kfc.png");
+        }
+        
+        .link-restaurant {
+            display: none;
+        }*/
+        
+        .modal {
+            position: fixed;
+            display: none;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        .is-open {
+            display: flex;
+        }
+        
+        .modal-dialog {
+            max-width: 780px;
+            width: 95%;
+            background: #FFFFFF;
+            border-radius: 5px;
+            margin: auto;
+            padding: 40px 45px;
+        }
+        
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 45px;
+        }
+        
+        .close {
+            border: none;
+            background-color: #FFFFFF;
+            font-size: 30px;
+        }
+        
+        .modal-title {
+            margin: 0;
+        }
+        
+        .modal h3 {
+            font-size: 35px;
+        }
+        /*MODAL for FOOD*/
+        
+        .modal-body {
+            width: 688.91px;
+            height: 336.52px;
+            margin: auto;
+            margin-bottom: 52px;
+            overflow: scroll;
+            padding: 0px 5px 0px 5px;
+        }
+        
+        .modal-body::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 0px;
+            border-radius: 0px;
+            background-color: #101616;
+            border-radius: 5px;
+        }
+        
+        .modal-body::-webkit-scrollbar-thumb:hover {
+            background-color: #101616;
+            border-radius: 5px;
+        }
+        
+        .modal-body::-webkit-resizer {
+            background-image: url('');
+            background-repeat: no-repeat;
+            width: 4px;
+            height: 0px
+        }
+        
+        .modal-body::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .food-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #d9d9d9;
+            margin-bottom: 15px;
+        }
+        
+        .food-price {
+            margin-left: auto;
+            margin-right: 47px;
+            color: black;
+            font-size: 22px;
+        }
+        
+        .food-name {
+            font-size: 22px;
+        }
+        
+        .counter {
+            font-size: 25px;
+            margin: 0px 5px 0px 5px;
+        }
+        
+        .counter-button {
+            width: 35px;
+            font-size: 25px;
+            background-color: transparent;
+            border: 1px solid silver;
+            border-radius: 5px;
+        }
+        
+        .modal-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-buttons {
+            display: flex;
+            align-items: center;
+        }
+        
+        .modal-footer-price {
+            background-color: #262626;
+            color: white;
+            padding: 10px 35px;
+            border-radius: 5px;
+        }
+        /*MODAL AUTH FORM*/
+        
+        .modal-dialog-auth {
+            height: 230px;
+        }
+        
+        .auth-form-label {
+            font-size: 28px;
+        }
+        
+        .auth-input {
+            width: 40%;
+            height: 30px;
+            border: 1px solid silver;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+        
+        .auth-name {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .auth-number {
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .button-auth {
+            margin-top: 15px;
+            float: right;
+            margin-right: 8%;
+        }
+        /*Restaurants*/
+        
+        .modal-img {
+            width: 60%;
+            border: 1px solid silver;
+        }
+        
+        .main-info {
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .title-info {
+            margin-left: 10px;
+        }
+        
+        .modal-rest-buttons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        .modal-rest-price {
+            width: 70px;
+            padding: 7px 13px;
+            margin-right: 5px;
+            text-align: center;
+        }
+        
+        .title-info h1 {
+            margin-bottom: 0px;
+        }
+        
+        .modal .category {
+            margin-top: 0;
+            color: rgba(0, 0, 0, 0.623);
+        }
+        
+        .modal-dialog-rest {
+            min-height: 380px;
+        }
+        
+        .modal-body-rest {
+            height: 290px;
+            margin-bottom: 0;
+        }
+        
+        .img-food {
+            width: 60%;
+            height: 60%;
+        }
+        
+        .modal-body-food {
+            height: 340px;
+        }
+        
+        .composition {
+            margin-bottom: 0px;
+        }
+        /* Media */
+        
+        @media(max-width:1366px) {
+            .container {
+                max-width: 960px;
+            }
+            .input-search {
+                width: 520px;
+            }
+            .card-title {
+                display: block;
+            }
+            .card {
+                min-height: 320px;
+            }
+            .card-meal {
+                height: 340px;
+            }
+            .promo {
+                background-size: 570px;
+                background-position: top 90px left 470px;
+            }
+            .promo-restaurant {
+                background-color: white;
+                background-size: 800px;
+                background-position: top -30px right -40px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .container {
+                max-width: 750px;
+            }
+            .input-search {
+                width: 370px;
+            }
+            .promo {
+                background-size: 570px;
+                background-position: top 90px left 420px;
+            }
+            .promo-restaurant {
+                background-color: white;
+                background-size: 600px;
+                background-position: top 5px right -40px;
+            }
+            .card {
+                min-height: 280px;
+            }
+            .card-meal {
+                height: 290px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .modal-dialog {
+                height: 80%;
+                max-width: 80%;
+            }
+            .modal-img {
+                float: left;
+                width: 65%;
+            }
+            .modal-body {
+                height: 100%;
+            }
+            .main-info {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            .title-info {
+                width: 80%;
+                margin: auto;
+            }
+            .container {
+                max-width: 560px;
+            }
+            .card {
+                flex-basis: 49%;
+                min-height: 320px;
+            }
+            .cards {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .input-under-promo {
+                display: block;
+                margin: auto;
+                margin-top: 10px;
+            }
+            .input-header {
+                display: none;
+            }
+            .promo {
+                height: 120px;
+                background: #fff1b8 url(./img/cards/promo-img.png) top -235px left -60px;
+                background-size: 500px;
+                background-repeat: no-repeat;
+                padding-top: 230px;
+            }
+            .text-promo {
+                width: 100%;
+            }
+            .text-promo h2 {
+                font-size: 24px;
+            }
+            .text-promo p {
+                font-size: 16px;
+            }
+            .promo-restaurant {
+                background-color: white;
+                background-size: 600px;
+                background-position: top -45px right -30px;
+            }
+        }
+        
+        @media (max-width: 578px) {
+            .container {
+                width: 90%;
+            }
+            .card {
+                flex-basis: 98%;
+            }
+            .card-meal {
+                height: 400px;
+            }
+            .promo {
+                height: 140px;
+                background: #fff1b8 url(./img/cards/promo-img.png) top -325px left -90px;
+                background-size: 500px;
+                background-repeat: no-repeat;
+                padding: 160px 0 10px 20px;
+            }
+            .text-promo h2 {
+                font-size: 20px;
+            }
+            .text-promo p {
+                font-size: 14px;
+            }
+            .promo-restaurant {
+                background-color: white;
+                background-size: 300px;
+                background-position: top 5px right -30px;
+            }
+        }
+        
+        @media (max-device-width: 480px) {
+            body {
+                width: 100%;
+            }
+            .promo {
+                height: 160px;
+            }
+            .card-meal {
+                height: 360px;
+            }
+            .input-under-promo {
+                width: 300px;
+            }
+        }

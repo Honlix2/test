@@ -1,0 +1,40 @@
+                     .promo-restaurant {
+                     background-image: url(./img/logo-restaurants/tiko.png);
+                 }
+                 /* Media */
+                 
+                 @media(max-width:1366px) {
+                     .promo-restaurant {
+                         background-image: url(./img/logo-restaurants/tiko.png);
+                     }
+                 }
+                 
+                 @media (max-width: 992px) {
+                     .promo-restaurant {
+                         background-color: white;
+                         background-size: 600px;
+                         background-position: top 5px right -40px;
+                     }
+                     .promo-restaurant-papakarlo {
+                         background-image: url(./img/logo-restaurants/tiko.png);
+                     }
+                     @media (max-width: 768px) {
+                         .promo-restaurant {
+                             background-color: white;
+                             background-size: 600px;
+                             background-position: top -45px right -30px;
+                         }
+                         .promo-restaurant-papakarlo {
+                             background-image: url(./img/logo-restaurants/tiko.png);
+                         }
+                     }
+                     @media (max-width: 578px) {
+                         .promo-restaurant {
+                             background-color: white;
+                             background-size: 300px;
+                             background-position: top 5px right -30px;
+                         }
+                         .promo-restaurant-papakarlo {
+                             background-image: url(./img/logo-restaurants/tiko.png);
+                         }
+                     }
